@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AR - Boneco de Neve</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <model-viewer
+      src="/modelos/Prontos/Boneco.glb"
+      ios-src="/modelos/Prontos/Boneco.usdz"
+      ar
+      ar-modes="quick-look scene-viewer webxr"
+      camera-controls
+      auto-rotate
+      environment-image="neutral"
+    >
+    </model-viewer>
+  </body>
+</html>
